@@ -35,19 +35,19 @@ let buildPerson = (data) => {
             <h5 class="card-title">${person.name.first} ${person.name.last}</h5>
             <p class="card-text"></p>
             </div>
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i>Email:</i> ${person.email}</li>
+            <li class="list-group-item"> <i>Address:</i> <br>
+            ${person.location.street.number} ${person.location.street.name}<br>
+            ${person.location.city}, ${person.location.state} ${person.location.postcode}  ${person.location.country}
+            </li>
+            <li class="list-group-item"><i>Work Phone:</i><br> ${person.phone}</li>
+            <li class="list-group-item"><i>Cell Phone:</i><br> ${person.cell}</li>
+            <li class="list-group-item"><i>ID:</i><br> ${person.login.uuid}</li>
+            <li class="list-group-item"><i>SSN:</i><br> ${person.id.value}</li>
+            <li class="list-group-item"><i>Username:</i><br> ${person.login.username}</li>
+            </ul>
         
-        
-        <p class="card-text">${person.email}</p>
-        <p class="card-text">${person.phone}</p>
-        <p class="card-text">${person.location.street.number} ${person.location.street.name}</p>
-        <p class="card-text">${person.location.city}, ${person.location.state} ${person.location.postcode}</p>
-        <p class="card-text">${person.location.country}</p>
-        
-        <p class="card-text">${person.dob.age}</p>
-        <p class="card-text">${person.dob.date}</p>
-        <p class="card-text">${person.registered.date}</p>
-        <p class="card-text">${person.registered.age}</p>
-        <p class="card-text">${person.nat}</p>
-        
+
             `;
 };
